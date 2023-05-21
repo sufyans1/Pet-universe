@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: tomato;
+}
+
+.logo img {
+    padding: 3vh;
+    height: 10vh;
+    width: auto;
+}
+
+.links li , ul {
+    font-size: large;
+    padding: 3vh;
+    display: flex;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    background-color: rgb(165, 199, 199);
+    overflow: hidden;
+}
+
+footer {
+    overflow: hidden;
+    background: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+    transform: translate();
+}
+
+a:not(footer a):hover {
+    color: aliceblue;
+    text-decoration: none;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    animation: slide 25s infinite;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar
+    {
+        justify-content: right;
+    }
+
+    .logo{
+        position: relative;
+        right: 20%;
+    }
+
+    .links li , ul {
+        font-size: medium;
+        padding: 1vh;
+    }
+}
+

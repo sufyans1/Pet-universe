@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIGN UP</title>
+        <link rel="icon" href="assets/icon.png">
+        <link rel="stylesheet" href="stylesignup.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Logo">
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="signin.html">sign in</a></li>
+                        <li><a href="signup.html">sign up</a></li>
+                        <li><a href="">contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="main-content">
+                <div class="popup" id="popup">
+                    <img src="assets/logo.png" alt="">
+                    <h2>
+                        welcome
+                    </h2>
+                    <p>a warm paw-some welcome for you and your pet</p>
+                    <button onclick="closePopup();" id="colsePopup">
+                        okay
+                    </button>
+                </div>
+                <h1 class="page-title">SIGN UP</h1>
+                <form class="signin-form" id="signupBox">
+                    <div class="signin">
+                        
+                        <input type="text" class="input " placeholder="First name" id="First name">
+
+                        <input type="text" class="input" placeholder="Last name" id="Last name">
+
+
+                        <input type="date" class="input" name="dob" id="Date  of birth">
+
+                        <div class="input gender">
+                            <input type="radio" name="gender" class="input" id="m">
+                            <label for="m">Male</label>
+                            <input type="radio" name="gender" class="input" id="f">
+                            <label for="f">Female</label>
+                        </div>
+                        <input type="number" placeholder="Phone number" class="input" id="Phone number">
+                        <input type="text" placeholder="Email" class="input" id="email">
+                        <textarea id="Address" cols="20" rows="5" placeholder="Address" class="input"></textarea>
+                        <select id="State" class="input">
+                            <option value="">Select state</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar input</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                        </select>
+
+
+                        <input type="text" placeholder="City" id="city" class="input">
+
+
+                        <input type="text" placeholder="Username" id="username" class="input">
+
+
+                        <input type="password" placeholder="Password" id="password" class="input">
+
+
+                        <input type="password" placeholder="Confirm password" id="confirmpassword" class="input">
+
+                        <div class="input submit">
+                            <input type="button" value="Sign Up" id="signup" onclick="validateSignup();">
+                        </div>
+                        <span class="input">
+                            already have an account..?
+                        </span>
+                        <div class="input signup">
+                            <a href="signin.html">Sign In</a>
+                        </div>
+
+                    </form>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="links">
+                <ul>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">our team</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">careers</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html></div><script src="scriptSignup.js"></script></body></html>

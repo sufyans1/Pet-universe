@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIGN IN</title>
+        <link rel="icon" href="assets/icon.png">
+        <link rel="stylesheet" href="stylesignin.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Logo">
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="signin.html">sign in</a></li>
+                        <li><a href="signup.html">sign up</a></li>
+                        <li><a href="">contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="main-content">
+                <div class="popup" id="popUp">
+                    <img src="assets/logo.png" alt="">
+                    <h2>
+                        welcome
+                    </h2>
+                    <p>"Tail-wagging happiness starts here."</p>
+                    <button onclick="closePopup();" id="colsePopup">
+                        okay
+                    </button>
+                </div>
+                
+                <h1 class="page-title">SIGN IN</h1>
+                <form class="signin-form" id="signinBox">
+                    <div class="signin">
+                        <input type="text" placeholder="E-mail" id="email">
+                        <span id="emailspan"></span>
+                        <input type="password" placeholder="password" id="password">
+                        <span id="passwordspan"></span>
+                        <input type="button" value="sign in" id="signin" id="signin" onclick="validateSignin();">
+                        <span>
+                            dont have an account..??
+                        </span>
+                        <a href="signup.html">sign up</a>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <div class="links">
+                    <ul>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">our team</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">careers</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script src="scriptSignin.js"></script>
+    </body>
+</html>

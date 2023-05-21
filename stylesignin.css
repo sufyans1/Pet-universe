@@ -1,0 +1,178 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container
+{
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: tomato;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    padding: 3vh;
+    height: 10vh;
+    width: auto;
+}
+
+.links li, ul {
+    font-size: large;
+    padding: 3vh;
+    display: flex;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    background-color: rgb(165, 199, 199);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.popup
+{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    padding: 5%;
+    border-radius: 5%;
+    background-color: blanchedalmond;
+    color: tomato;
+    box-shadow: 2vh 2vh 2vh 2vh rgb(85, 78, 76);
+    transform: scale(0);
+}
+
+.popup:hover
+{
+    transform: scale(1);
+    transition: 1s;
+}
+
+.popup img
+{
+    border: 2px solid;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -5%;
+    border-radius: 50%;
+    height: 10vh;
+    width: auto;
+}
+
+.popup button
+{
+    background-color: tomato;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: blanchedalmond;
+    margin-top: 10%;
+    padding: 2vh 5vh;
+    border-radius: 3%;
+    transform: translate();
+}
+
+.popup button:hover
+{
+    scale: 1.1;
+    transition: 0.5s;
+     background-color: brown;
+}
+
+h1 {
+    margin-bottom: 5%;
+    color: tomato;
+}
+
+.signin{
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4%;
+    background-color: tomato;
+    box-shadow: 2vh 3vh rgb(100, 99, 99);
+}
+
+footer {
+    overflow: hidden;
+    background: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input
+{
+    background-color: blanchedalmond;
+    margin: 2%;
+    padding: 2%;
+    border: none;
+    outline:none;
+}
+
+a
+{
+    color: brown;
+    text-decoration: none;
+    transform: translate();
+}
+
+a:not(footer a):hover {
+    color: aliceblue;
+    text-decoration: none;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+span
+{
+    color: blanchedalmond;
+}
+
+#signin
+{
+    height: 5vh;
+    width: 15vh;
+    border: none;
+    border-radius: 5%;
+    transform: translate();
+}
+
+#signin:hover
+{
+    cursor: pointer;
+    scale: 1.1;
+    transition: .3s;
+    background-color: rgb(237, 196, 133);
+}
+
+@media  (width<600px) {
+    .navbar
+    {
+        justify-content: right;
+    }
+
+    .logo{
+        position: relative;
+        right: 20%;
+    }
+
+    .links li,
+    ul {
+        font-size: medium;
+        padding: 1vh;
+    }   
+}

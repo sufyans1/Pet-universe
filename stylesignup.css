@@ -1,0 +1,180 @@
+
+body {
+    margin: 0px;
+}
+
+.container {
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: tomato;
+    overflow: hidden;
+}
+.logo img {
+    padding: 3vh;
+    height: 10vh;
+    width: auto;
+  
+}
+.links li , ul {
+    font-size: large;
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110%;
+    background-color: rgb(165, 199, 199);
+    padding: 3%;
+}
+.signin
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+form{
+    color: blanchedalmond;
+    padding: 5% 10%;
+    background-color: tomato;
+    border-radius: 3%;
+    box-shadow: 2vh 3vh rgb(100, 99, 99);
+}
+input ,textarea , select
+{
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 1%;
+    margin: 3%;
+    background-color: blanchedalmond;
+}
+input:focus ,textarea:focus ,select:focus
+{
+    outline: transparent;
+}
+.gender
+{
+    display: flex;
+}
+h1 {
+    color: tomato;
+}
+
+footer {
+    overflow: hidden;
+    background: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+a
+{
+    color: brown;
+    text-decoration: none;
+    transform: translate();
+}
+a:not(footer a):hover {
+    color: aliceblue;
+    text-decoration: none;
+    scale: 1.1;
+    transition: 0.5s;
+}
+#signup
+{
+    height: 5vh;
+    width: 15vh;
+    border: none;
+    border-radius: 5%;
+    transform: translate();
+}
+#signup:hover
+{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.5s;
+    background-color: rgb(237, 196, 133);
+}
+.popup
+
+{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    padding: 5%;
+    border-radius: 5%;
+    background-color: blanchedalmond;
+    color: tomato;
+    box-shadow: 2vh 2vh 2vh 2vh rgb(85, 78, 76);
+    transform: scale(0);
+    
+}
+.popup:hover
+{
+    transform: scale(1);
+    transition: 1s;
+}
+.popup img
+{
+    border: 2px solid;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -5%;
+    border-radius: 50%;
+    height: 10vh;
+    width: auto;
+}
+.popup button
+{
+    background-color: tomato;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: blanchedalmond;
+    margin-top: 10%;
+    padding: 2vh 5vh;
+    border-radius: 3%;
+    transform: translate();
+}
+.popup button:hover
+{
+    scale: 1.1;
+    transition: 0.5s;
+     background-color: brown;
+} 
+input::-webkit-inner-spin-button ,
+input::-webkit-outer-spin-button
+{
+    visibility: hidden;
+}
+@media  (width<600px) {
+    .navbar
+    {
+        justify-content: right;
+    }
+    .logo{
+        position: relative;
+        right: 20%;
+    }
+    .links li,
+    ul {
+        font-size: medium;
+        padding: 1vh;
+    }
+    
+}
