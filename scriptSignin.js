@@ -1,34 +1,54 @@
-let inputElements = document.getElementsByTagName("input");
-let emailspan = document.getElementById("emailspan");
-let passwordspan = document.getElementById("passwordspan");
+let email = document.getElementById("email");
+let password = document.getElementById("password");
+let errorMessage = document.getElementsByTagName("small");
 let popup = document.getElementById("popUp");
 let signinBox = document.getElementById("signinBox");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-console.log(inputElements);
+let flag1 , flag2;
+let btnSignin = document.getElementById("btnSignin");
 
 // function to validate input forms
 
-function validateSignin() {
+function validateSignin(name) {
+    if (name === "email" )
+     {
+        flag1 = 0;
+        if (email.value == "" || ! emailRegex.test(email.value)) 
+        {
+            errorMessage[0].innerHTML = "enter a valid email"
+            email.style.border = "3px solid red";
+        }
+    else
+    {
+        flag1 = 1;
+        errorMessage[0].innerHTML = ""
+        email.style.border = "none";
+    }
+    }
+    else if (name === "password") {
+        flag2 = 0;
+    if (password.value == "" || password.value.length < 8) 
+    {
+        errorMessage[1].innerHTML = "Enter a valid password";
+        password.style.border = "3px solid red";
     
-    emailspan.innerHTML = "";
-    passwordspan.innerHTML = "";
-    let invalidInputCount = 0;
-
-    if (inputElements[0].value == "" || ! emailRegex.test(inputElements[0].value)) {
-        emailspan.innerHTML = "enter a valid email"
-        invalidInputCount++;
-    }
-    if (inputElements[1].value == "" || inputElements[1].value.length < 8) {
-        console.log("please enter a valid password");
-        passwordspan.innerHTML = "enter a valid password"
-        invalidInputCount++;
     }
 
+    else
+    {
+        flag2 = 1;
+        errorMessage[1].innerHTML = "";
+        password.style.border = "none"
+    }
+    
+    }
+    
     // if there is no error display popup box
-
-    if (invalidInputCount == 0) {
-        openPopup();
+    if (flag1 && flag2 ) {
+        btnSignin.disabled = false;
+    }
+    else{
+        btnSignin.disabled = true;
     }
 }
 
@@ -43,6 +63,7 @@ function closePopup() {
     popup.style.transform = "scale(0)";
     popup.style.transition = "transform 1s"
     signinBox.style.visibility = "visible"
-    inputElements[0].value = "";
-    inputElements[1].value = "";
+    email.value = "";
+    password.value = "";   
+    btnSignin.disabled = true;
 }
