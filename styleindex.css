@@ -23,7 +23,7 @@ body {
 
 .links li , ul {
     font-size: large;
-    padding: 1vh 3vh;
+    padding: 0.5vh 3vh;
     display: flex;
 }
 
@@ -42,7 +42,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15%;
 }
 
 a {
@@ -118,8 +117,8 @@ a:not(footer a):hover {
     }
 
     .logo{
-        position: relative;
-        right: 20%;
+        visibility: hidden;
+        justify-content: center;
     }
 
     .links li , ul {
