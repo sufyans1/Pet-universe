@@ -1,10 +1,9 @@
-
 body {
     margin: 0px;
 }
 
 .container {
-    height: 100vh;
+    height: 120vh;
 }
 
 .navbar {
@@ -16,14 +15,15 @@ body {
     overflow: hidden;
 }
 .logo img {
-    padding: 3vh;
+    border-radius: 50% 50% 0px 0px ;
+    padding-left: 1vh;
     height: 10vh;
     width: auto;
   
 }
 .links li , ul {
     font-size: large;
-    padding: 3vh;
+    padding: 1vh 3vh;
     display: flex;
     flex-direction: row;
     
