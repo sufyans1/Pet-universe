@@ -25,7 +25,7 @@ body {
 
 .links li, ul {
     font-size: large;
-    padding: 1vh 3vh;
+    padding: 0.5vh 3vh;
     display: flex;
 }
 
@@ -160,20 +160,19 @@ small , span
     background-color: rgb(237, 196, 133);
 }
 
-@media  (width<600px) {
+@media screen and (max-width: 600px) {
     .navbar
     {
         justify-content: right;
     }
 
     .logo{
-        position: relative;
-        right: 20%;
+        visibility: hidden;
+        justify-content: center;
     }
 
-    .links li,
-    ul {
+    .links li , ul {
         font-size: medium;
         padding: 1vh;
-    }   
+    }
 }
