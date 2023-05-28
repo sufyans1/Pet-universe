@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SIGN UP</title>
+        <title>Sign up</title>
         <link rel="icon" href="assets/icon.png">
         <link rel="stylesheet" href="stylesignup.css">
     </head>
@@ -17,9 +17,9 @@
                 <div class="links">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="signin.html">sign in</a></li>
-                        <li><a href="signup.html">sign up</a></li>
-                        <li><a href="">contact us</a></li>
+                        <li><a href="signin.html">Sign in</a></li>
+                        <li><a href="signup.html">Sign up</a></li>
+                        <li><a href="">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -31,30 +31,37 @@
                     </h2>
                     <p>a warm paw-some welcome for you and your pet</p>
                     <button onclick="closePopup();" id="colsePopup">
-                        okay
+                        Okay
                     </button>
                 </div>
-                <h1 class="page-title">SIGN UP</h1>
+                <h1 class="page-title">Sign up</h1>
                 <form class="signin-form" id="signupBox">
                     <div class="signin">
                         
-                        <input type="text" class="input " placeholder="First name" id="First name">
+                        <input type="text" class="input " placeholder="First name" id="First name" onfocusout="validateFirstName();">
+                        <small></small>
 
-                        <input type="text" class="input" placeholder="Last name" id="Last name">
+                        <input type="text" class="input" placeholder="Last name" id="Last name" onfocusout="validateSecondName();">
+                        <small></small>
 
-
-                        <input type="date" class="input" name="dob" id="Date  of birth">
-
+                        <input type="text" placeholder="Date Of Birth" class="input" name="dob" id="Date  of birth" onfocus="(this.type='Date')" onfocusout="validateDateOfBirth();">
+                        <small></small>
                         <div class="input gender">
                             <input type="radio" name="gender" class="input" id="m">
                             <label for="m">Male</label>
+                            <small></small>
                             <input type="radio" name="gender" class="input" id="f">
                             <label for="f">Female</label>
+                            <small></small>
                         </div>
-                        <input type="number" placeholder="Phone number" class="input" id="Phone number">
-                        <input type="text" placeholder="Email" class="input" id="email">
-                        <textarea id="Address" cols="20" rows="5" placeholder="Address" class="input"></textarea>
-                        <select id="State" class="input">
+                        <small></small>
+                        <input type="number" placeholder="Phone number" class="input" id="Phone number" onfocusout="validatePhoneNumber()";>
+                        <small></small>
+                        <input type="text" placeholder="Email" class="input" id="email" onfocusout="validateEmail();">
+                        <small></small>
+                        <textarea id="Address" cols="20" rows="5" placeholder="Address" class="input" onfocusout="validateAddress();"></textarea>
+                        <small></small>
+                        <select id="State" class="input" onfocusout="validateState();">
                             <option value="">Select state</option>
                             <option value="Andhra Pradesh">Andhra Pradesh</option>
                             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -90,27 +97,28 @@
                             <option value="Lakshadweep">Lakshadweep</option>
                             <option value="Puducherry">Puducherry</option>
                         </select>
+                        <small></small>
 
 
-                        <input type="text" placeholder="City" id="city" class="input">
+                        <input type="text" placeholder="City" id="city" class="input" onfocusout="validateCity();">
+                        <small></small>
 
+                        <input type="text" placeholder="Username" id="username" class="input" onfocusout="validateUsername();">
+                        <small></small>
 
-                        <input type="text" placeholder="Username" id="username" class="input">
+                        <input type="password" placeholder="Password" id="password" class="input" onfocusout="validatePassword();">
+                        <small></small>
 
-
-                        <input type="password" placeholder="Password" id="password" class="input">
-
-
-                        <input type="password" placeholder="Confirm password" id="confirmpassword" class="input">
-
+                        <input type="password" placeholder="Confirm password" id="confirm password" class="input" onfocusout="validateConfirmPassword();">
+                        <small></small>
                         <div class="input submit">
-                            <input type="button" value="Sign Up" id="signup" onclick="validateSignup();">
+                            <input type="button" value="Sign Up" id="signup" onclick="ValidateSignup();" >
                         </div>
                         <span class="input">
-                            already have an account..?
+                            Already have an account..?
+                            <a href="signin.html">Sign In</a>
                         </span>
                         <div class="input signup">
-                            <a href="signin.html">Sign In</a>
                         </div>
 
                     </form>
@@ -120,10 +128,10 @@
         <footer>
             <div class="links">
                 <ul>
-                    <li><a href="">about us</a></li>
-                    <li><a href="">our team</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">careers</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Our team</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Careers</a></li>
                 </ul>
             </div>
         </footer>
